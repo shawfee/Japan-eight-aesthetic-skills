@@ -1,0 +1,59 @@
+{
+  "skill": "japan-micro-consciousness",
+  "version": "0.1.0",
+  "source_book": "日本的八个审美意识 — 黑川雅之",
+  "darwin_compatible": true,
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger(含 1 条同书兄弟 skill 混淆诱饵) + 1 条 edge_case。should_not_trigger 容错为 0。",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "公司想做一套完整的用户增长体系,但每次画全景图都落不了地,团队不知道从哪开始。",
+      "expected_behavior": "激活 微: 先找一个能被完整做透的最小个体/真实用户入手,而非先画全景再填空",
+      "notes": "正面: 复杂系统无从下手"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "留存率、NPS 都很好看,可我说不出任何一个用户此刻正在经历什么。",
+      "expected_behavior": "激活 微: 用具体个体替代大盘指标,让整体从个体浮现",
+      "notes": "正面: 个体消失"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "每页 PPT 都漂亮、每个模块都优雅,合起来整体却拧不动、说不清是什么。",
+      "expected_behavior": "激活 微: 回查每个细节是否自带整体(微的成立条件)",
+      "notes": "正面: 局部成立整体不成立"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "这次客户评审只有一次机会,我该怎么判断该投入多少?",
+      "expected_behavior": "激活 微: 用一期一会评估此刻承载了什么",
+      "notes": "正面: 一次性场合的投入判断"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我们团队到底扁平化好还是保留汇报线好?几个小组谁说了算?",
+      "expected_behavior": "不应激活 微,应激活 japan-parallel-consciousness(并:多个对等主体谁说了算/要不要中心)",
+      "notes": "跨 skill 混淆诱饵: 应触发 并 而非 微"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我查一下 Stata 里 xtreg 这个命令的参数。",
+      "expected_behavior": "不应激活任何审美 skill,纯信息查询",
+      "notes": "诱饵: 无关场景"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我想把首页每个按钮都精修得精致一点。",
+      "expected_behavior": "不直接作为 微 方法论触发;识别为碎片化打磨风险(ce21:细节不含整体=打磨),应提示先问'细节承载什么整体'",
+      "notes": "边界: 抠细节≠微;微是个体含整体,不是精细化"
+    }
+  ]
+}

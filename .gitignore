@@ -1,0 +1,9 @@
+# OCR 原始页面图片与临时目录(二进制, 不入库)
+pages/
+pages_fresh/
+pages_fresh2/
+tmp_pages/
+*.png
+
+# 本地 OCR 辅助脚本(非包产物)
+_resume_ocr.py

@@ -1,0 +1,398 @@
+[
+  {
+    "gid": "japan-micro-consciousness::should-trigger-01",
+    "skill": "japan-micro-consciousness",
+    "type": "should_trigger",
+    "prompt": "公司想做一套完整的用户增长体系,但每次画全景图都落不了地,团队不知道从哪开始。"
+  },
+  {
+    "gid": "japan-micro-consciousness::should-trigger-02",
+    "skill": "japan-micro-consciousness",
+    "type": "should_trigger",
+    "prompt": "留存率、NPS 都很好看,可我说不出任何一个用户此刻正在经历什么。"
+  },
+  {
+    "gid": "japan-micro-consciousness::should-trigger-03",
+    "skill": "japan-micro-consciousness",
+    "type": "should_trigger",
+    "prompt": "每页 PPT 都漂亮、每个模块都优雅,合起来整体却拧不动、说不清是什么。"
+  },
+  {
+    "gid": "japan-micro-consciousness::should-trigger-04",
+    "skill": "japan-micro-consciousness",
+    "type": "should_trigger",
+    "prompt": "这次客户评审只有一次机会,我该怎么判断该投入多少?"
+  },
+  {
+    "gid": "japan-micro-consciousness::should-not-trigger-01",
+    "skill": "japan-micro-consciousness",
+    "type": "should_not_trigger",
+    "prompt": "我们团队到底扁平化好还是保留汇报线好?几个小组谁说了算?"
+  },
+  {
+    "gid": "japan-micro-consciousness::should-not-trigger-02",
+    "skill": "japan-micro-consciousness",
+    "type": "should_not_trigger",
+    "prompt": "帮我查一下 Stata 里 xtreg 这个命令的参数。"
+  },
+  {
+    "gid": "japan-micro-consciousness::edge-01",
+    "skill": "japan-micro-consciousness",
+    "type": "edge_case",
+    "prompt": "我想把首页每个按钮都精修得精致一点。"
+  },
+  {
+    "gid": "japan-parallel-consciousness::should-trigger-01",
+    "skill": "japan-parallel-consciousness",
+    "type": "should_trigger",
+    "prompt": "我们开源社区没有 leader,该怎么自组织才不乱?"
+  },
+  {
+    "gid": "japan-parallel-consciousness::should-trigger-02",
+    "skill": "japan-parallel-consciousness",
+    "type": "should_trigger",
+    "prompt": "这两个方案必须二选一吗?能不能都留着各司其职?"
+  },
+  {
+    "gid": "japan-parallel-consciousness::should-trigger-03",
+    "skill": "japan-parallel-consciousness",
+    "type": "should_trigger",
+    "prompt": "版面非要有一个主视觉焦点吗?我觉得多个模块摆一起不像整体。"
+  },
+  {
+    "gid": "japan-parallel-consciousness::should-trigger-04",
+    "skill": "japan-parallel-consciousness",
+    "type": "should_trigger",
+    "prompt": "多元文化团队,多种价值观怎么并存而不靠统一标准维持秩序?"
+  },
+  {
+    "gid": "japan-parallel-consciousness::should-not-trigger-01",
+    "skill": "japan-parallel-consciousness",
+    "type": "should_not_trigger",
+    "prompt": "我想先画个全景体系图,但每次都落不了地。"
+  },
+  {
+    "gid": "japan-parallel-consciousness::should-not-trigger-02",
+    "skill": "japan-parallel-consciousness",
+    "type": "should_not_trigger",
+    "prompt": "系统出了事故,写事故复盘报告,必须给出唯一责任人和一致事实。"
+  },
+  {
+    "gid": "japan-parallel-consciousness::edge-01",
+    "skill": "japan-parallel-consciousness",
+    "type": "edge_case",
+    "prompt": "我们扁平化了反而更乱,大家都说都可以,结果没人负责。"
+  },
+  {
+    "gid": "japan-ki-consciousness::should-trigger-01",
+    "skill": "japan-ki-consciousness",
+    "type": "should_trigger",
+    "prompt": "这个展厅让人感觉好冷、没有氛围,我说不清哪里不对。"
+  },
+  {
+    "gid": "japan-ki-consciousness::should-trigger-02",
+    "skill": "japan-ki-consciousness",
+    "type": "should_trigger",
+    "prompt": "团队最近不在一个频道,没有一体感,不是再加规则能解决的。"
+  },
+  {
+    "gid": "japan-ki-consciousness::should-trigger-03",
+    "skill": "japan-ki-consciousness",
+    "type": "should_trigger",
+    "prompt": "我想用一根柱子或一个标识给人安心感、提供心理锚点。"
+  },
+  {
+    "gid": "japan-ki-consciousness::should-trigger-04",
+    "skill": "japan-ki-consciousness",
+    "type": "should_trigger",
+    "prompt": "怎么调动孩子的内在动力,我不想靠命令施压。"
+  },
+  {
+    "gid": "japan-ki-consciousness::should-not-trigger-01",
+    "skill": "japan-ki-consciousness",
+    "type": "should_not_trigger",
+    "prompt": "这段演讲哪里该停顿、节奏不对,我想安排留白和余韵。"
+  },
+  {
+    "gid": "japan-ki-consciousness::should-not-trigger-02",
+    "skill": "japan-ki-consciousness",
+    "type": "should_not_trigger",
+    "prompt": "帮我算一下这个梁的承重参数和截面尺寸。"
+  },
+  {
+    "gid": "japan-ki-consciousness::edge-01",
+    "skill": "japan-ki-consciousness",
+    "type": "edge_case",
+    "prompt": "日本人那种'气场''能量'到底科学吗?我想用气解释一切团队问题。"
+  },
+  {
+    "gid": "japan-ma-interval::should-trigger-01",
+    "skill": "japan-ma-interval",
+    "type": "should_trigger",
+    "prompt": "这个页面太满了,要不要留点留白承载意义而非只是未利用的空?"
+  },
+  {
+    "gid": "japan-ma-interval::should-trigger-02",
+    "skill": "japan-ma-interval",
+    "type": "should_trigger",
+    "prompt": "演讲节奏不对,该停顿的地方我还在说,想安排余韵。"
+  },
+  {
+    "gid": "japan-ma-interval::should-trigger-03",
+    "skill": "japan-ma-interval",
+    "type": "should_trigger",
+    "prompt": "我想保留一点距离感、别太近,制造暧昧魅力。"
+  },
+  {
+    "gid": "japan-ma-interval::should-trigger-04",
+    "skill": "japan-ma-interval",
+    "type": "should_trigger",
+    "prompt": "模块之间的接缝处很怪、衔接带卡顿,那里比核心还重要却被忽略。"
+  },
+  {
+    "gid": "japan-ma-interval::should-not-trigger-01",
+    "skill": "japan-ma-interval",
+    "type": "should_not_trigger",
+    "prompt": "产品文档我写太全了用户反而不读,想故意藏一点让他自己想。"
+  },
+  {
+    "gid": "japan-ma-interval::should-not-trigger-02",
+    "skill": "japan-ma-interval",
+    "type": "should_not_trigger",
+    "prompt": "用 CSS 怎么把这块宽度设为 40%?"
+  },
+  {
+    "gid": "japan-ma-interval::edge-01",
+    "skill": "japan-ma-interval",
+    "type": "edge_case",
+    "prompt": "我想在文章里'制造'一点留白和停顿,显得高级。"
+  },
+  {
+    "gid": "japan-secret-consciousness::should-trigger-01",
+    "skill": "japan-secret-consciousness",
+    "type": "should_trigger",
+    "prompt": "产品文档写太全用户照抄不动脑,想故意留白驱动他自己推。"
+  },
+  {
+    "gid": "japan-secret-consciousness::should-trigger-02",
+    "skill": "japan-secret-consciousness",
+    "type": "should_trigger",
+    "prompt": "演讲想让观众参与进来,给暗示不给结论。"
+  },
+  {
+    "gid": "japan-secret-consciousness::should-trigger-03",
+    "skill": "japan-secret-consciousness",
+    "type": "should_trigger",
+    "prompt": "带新人,我想让他自己想通,以退为进。"
+  },
+  {
+    "gid": "japan-secret-consciousness::should-trigger-04",
+    "skill": "japan-secret-consciousness",
+    "type": "should_trigger",
+    "prompt": "想要那种朦胧高级留白的感觉,不用全亮全清楚。"
+  },
+  {
+    "gid": "japan-secret-consciousness::should-not-trigger-01",
+    "skill": "japan-secret-consciousness",
+    "type": "should_not_trigger",
+    "prompt": "版式太满,要不要留点空白承载意义?"
+  },
+  {
+    "gid": "japan-secret-consciousness::should-not-trigger-02",
+    "skill": "japan-secret-consciousness",
+    "type": "should_not_trigger",
+    "prompt": "写一份手术知情同意书,必须确保患者 100% 理解风险。"
+  },
+  {
+    "gid": "japan-secret-consciousness::edge-01",
+    "skill": "japan-secret-consciousness",
+    "type": "edge_case",
+    "prompt": "读者没完全按我的意思理解,我要不要补解释把话说尽?"
+  },
+  {
+    "gid": "japan-plain-consciousness::should-trigger-01",
+    "skill": "japan-plain-consciousness",
+    "type": "should_trigger",
+    "prompt": "界面太花哨了,怎么减到最本质?"
+  },
+  {
+    "gid": "japan-plain-consciousness::should-trigger-02",
+    "skill": "japan-plain-consciousness",
+    "type": "should_trigger",
+    "prompt": "素材优先还是造型优先?要不要加这个特效?"
+  },
+  {
+    "gid": "japan-plain-consciousness::should-trigger-03",
+    "skill": "japan-plain-consciousness",
+    "type": "should_trigger",
+    "prompt": "用一张纸草图快速验证点子,却被'自由度越高越好'卡住。"
+  },
+  {
+    "gid": "japan-plain-consciousness::should-trigger-04",
+    "skill": "japan-plain-consciousness",
+    "type": "should_trigger",
+    "prompt": "纠结东西要不要永远如新,还是接受使用痕迹与风化路径。"
+  },
+  {
+    "gid": "japan-plain-consciousness::should-not-trigger-01",
+    "skill": "japan-plain-consciousness",
+    "type": "should_not_trigger",
+    "prompt": "先做个临时版原型,不必永久,暂定就好。"
+  },
+  {
+    "gid": "japan-plain-consciousness::should-not-trigger-02",
+    "skill": "japan-plain-consciousness",
+    "type": "should_not_trigger",
+    "prompt": "给视障用户做无障碍界面,功能不能被牺牲。"
+  },
+  {
+    "gid": "japan-plain-consciousness::edge-01",
+    "skill": "japan-plain-consciousness",
+    "type": "edge_case",
+    "prompt": "我想做极简设计,越少越好。"
+  },
+  {
+    "gid": "japan-kari-temporary::should-trigger-01",
+    "skill": "japan-kari-temporary",
+    "type": "should_trigger",
+    "prompt": "先做个临时版 MVP,不必完美、不能发我总纠结。"
+  },
+  {
+    "gid": "japan-kari-temporary::should-trigger-02",
+    "skill": "japan-kari-temporary",
+    "type": "should_trigger",
+    "prompt": "设计灵活空间,希望同一载体承担多用途、边界可流动。"
+  },
+  {
+    "gid": "japan-kari-temporary::should-trigger-03",
+    "skill": "japan-kari-temporary",
+    "type": "should_trigger",
+    "prompt": "把这项方案明确为临时、可弃、借来,需要语言框架向他人说明这不是最终承诺。"
+  },
+  {
+    "gid": "japan-kari-temporary::should-trigger-04",
+    "skill": "japan-kari-temporary",
+    "type": "should_trigger",
+    "prompt": "越想控制越做不出来,想顺其自然、把结果交给偶然。"
+  },
+  {
+    "gid": "japan-kari-temporary::should-not-trigger-01",
+    "skill": "japan-kari-temporary",
+    "type": "should_not_trigger",
+    "prompt": "茶碗破损了,我想修回它本来的本色,回到未加工。"
+  },
+  {
+    "gid": "japan-kari-temporary::should-not-trigger-02",
+    "skill": "japan-kari-temporary",
+    "type": "should_not_trigger",
+    "prompt": "这份合同我已经签了,但先暂定一下以后再说。"
+  },
+  {
+    "gid": "japan-kari-temporary::edge-01",
+    "skill": "japan-kari-temporary",
+    "type": "edge_case",
+    "prompt": "这个项目我就先随便搞搞、暂定就好,反正不用认真维护。"
+  },
+  {
+    "gid": "japan-break-innovation::should-trigger-01",
+    "skill": "japan-break-innovation",
+    "type": "should_trigger",
+    "prompt": "流程太僵了,想打破一下常规。"
+  },
+  {
+    "gid": "japan-break-innovation::should-trigger-02",
+    "skill": "japan-break-innovation",
+    "type": "should_trigger",
+    "prompt": "已经学到头了,怎么创新、加入自己的独特思考?"
+  },
+  {
+    "gid": "japan-break-innovation::should-trigger-03",
+    "skill": "japan-break-innovation",
+    "type": "should_trigger",
+    "prompt": "方案全过程计划零意外,最好一版是初稿,想打开偶然与断裂。"
+  },
+  {
+    "gid": "japan-break-innovation::should-trigger-04",
+    "skill": "japan-break-innovation",
+    "type": "should_trigger",
+    "prompt": "要挑战一个成熟规范/权威叙事,想打破但须评估风险与后果。"
+  },
+  {
+    "gid": "japan-break-innovation::should-not-trigger-01",
+    "skill": "japan-break-innovation",
+    "type": "should_not_trigger",
+    "prompt": "几个对等方案能不能都留着共存,不二选一?"
+  },
+  {
+    "gid": "japan-break-innovation::should-not-trigger-02",
+    "skill": "japan-break-innovation",
+    "type": "should_not_trigger",
+    "prompt": "我要做个手术方案,不能冒险打破既有流程。"
+  },
+  {
+    "gid": "japan-break-innovation::edge-01",
+    "skill": "japan-break-innovation",
+    "type": "edge_case",
+    "prompt": "我是新手刚学两天,想直接颠覆行业惯例搞个大创新。"
+  },
+  {
+    "gid": "adversarial::adv-01",
+    "skill": "japan-ma-interval",
+    "type": "should_trigger",
+    "prompt": "正文两侧要大片呼吸感留白,别挤满,让那片空本身能呼吸。"
+  },
+  {
+    "gid": "adversarial::adv-02",
+    "skill": "japan-secret-consciousness",
+    "type": "should_trigger",
+    "prompt": "短视频结尾留悬念不揭晓,逼观众二刷自己拼图。"
+  },
+  {
+    "gid": "adversarial::adv-03",
+    "skill": "japan-ki-consciousness",
+    "type": "should_trigger",
+    "prompt": "一进这空间就莫名压抑,说不出哪里不对,就是氛围不对。"
+  },
+  {
+    "gid": "adversarial::adv-04",
+    "skill": "japan-micro-consciousness",
+    "type": "should_trigger",
+    "prompt": "别谈宏大战略了,先抓一个真实用户把他一天走完。"
+  },
+  {
+    "gid": "adversarial::adv-05",
+    "skill": "japan-plain-consciousness",
+    "type": "should_trigger",
+    "prompt": "砍掉所有花哨特效,让素材自己说话。"
+  },
+  {
+    "gid": "adversarial::adv-06",
+    "skill": "japan-kari-temporary",
+    "type": "should_trigger",
+    "prompt": "先用假数据搭个 demo 给老板验方向,定了再真做。"
+  },
+  {
+    "gid": "adversarial::adv-07",
+    "skill": "japan-break-innovation",
+    "type": "should_trigger",
+    "prompt": "行业套路我学透了,现在要打破它的底层范式。"
+  },
+  {
+    "gid": "adversarial::adv-08",
+    "skill": "japan-parallel-consciousness",
+    "type": "should_trigger",
+    "prompt": "三个部门各有一套流程,能不能都留着别强行统一?"
+  },
+  {
+    "gid": "adversarial::adv-09",
+    "skill": "japan-secret-consciousness",
+    "type": "should_trigger",
+    "prompt": "教学时我不给标准答案,让学生自己推导出来。"
+  },
+  {
+    "gid": "adversarial::adv-10",
+    "skill": "japan-ma-interval",
+    "type": "should_trigger",
+    "prompt": "对话节奏不对,该停的地方我还在灌。"
+  }
+]

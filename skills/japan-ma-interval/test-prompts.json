@@ -1,0 +1,59 @@
+{
+  "skill": "japan-ma-interval",
+  "version": "0.1.0",
+  "source_book": "日本的八个审美意识 — 黑川雅之",
+  "darwin_compatible": true,
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger(含 1 条同书兄弟 skill 混淆诱饵) + 1 条 edge_case。should_not_trigger 容错为 0。",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "这个页面太满了,要不要留点留白承载意义而非只是未利用的空?",
+      "expected_behavior": "激活 间: 用空隙承载意义",
+      "notes": "正面: 留白"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "演讲节奏不对,该停顿的地方我还在说,想安排余韵。",
+      "expected_behavior": "激活 间: 停顿/余韵/节奏",
+      "notes": "正面: 停顿节奏"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我想保留一点距离感、别太近,制造暧昧魅力。",
+      "expected_behavior": "激活 间: 间距/距离感",
+      "notes": "正面: 间距"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "模块之间的接缝处很怪、衔接带卡顿,那里比核心还重要却被忽略。",
+      "expected_behavior": "激活 间: 过渡带/无名衔接处",
+      "notes": "正面: 衔接带"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "产品文档我写太全了用户反而不读,想故意藏一点让他自己想。",
+      "expected_behavior": "不应激活 间,应激活 japan-secret-consciousness(秘:借隐藏驱动想象)",
+      "notes": "跨 skill 混淆诱饵: 应触发 秘 而非 间"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "用 CSS 怎么把这块宽度设为 40%?",
+      "expected_behavior": "不应激活 间(纯技术实现)",
+      "notes": "诱饵: 纯实现"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我想在文章里'制造'一点留白和停顿,显得高级。",
+      "expected_behavior": "触发 间 但施加 ce13 边界(直接去'制造'留白=假间;须先有个体/内容,不可为留白而留白)",
+      "notes": "边界: 假间(ce13)"
+    }
+  ]
+}

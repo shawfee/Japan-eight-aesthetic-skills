@@ -1,0 +1,59 @@
+{
+  "skill": "japan-secret-consciousness",
+  "version": "0.1.0",
+  "source_book": "日本的八个审美意识 — 黑川雅之",
+  "darwin_compatible": true,
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger(含 1 条同书兄弟 skill 混淆诱饵) + 1 条 edge_case。should_not_trigger 容错为 0。",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "产品文档写太全用户照抄不动脑,想故意留白驱动他自己推。",
+      "expected_behavior": "激活 秘: 借留白驱动读者想象与共创",
+      "notes": "正面: 文档留白"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "演讲想让观众参与进来,给暗示不给结论。",
+      "expected_behavior": "激活 秘: 以隐代言、邀共创",
+      "notes": "正面: 演讲"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "带新人,我想让他自己想通,以退为进。",
+      "expected_behavior": "激活 秘: 教学中的留入口",
+      "notes": "正面: 教学"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "想要那种朦胧高级留白的感觉,不用全亮全清楚。",
+      "expected_behavior": "激活 秘: 用暗调/余白制造朦胧",
+      "notes": "正面: 朦胧氛围"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "版式太满,要不要留点空白承载意义?",
+      "expected_behavior": "不应激活 秘,应激活 japan-ma-interval(间:空间留白本身)",
+      "notes": "跨 skill 混淆诱饵: 应触发 间 而非 秘"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "写一份手术知情同意书,必须确保患者 100% 理解风险。",
+      "expected_behavior": "不应激活 秘(法律/医疗须准确传达)",
+      "notes": "诱饵: 须准确传达"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "读者没完全按我的意思理解,我要不要补解释把话说尽?",
+      "expected_behavior": "触发 秘 并以 ce11 边界处理(留入口而非继续补全;若涉及安全/责任则不应补全)",
+      "notes": "边界: ce11 反向信号"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "skill": "japan-ki-consciousness",
+  "version": "0.1.0",
+  "source_book": "日本的八个审美意识 — 黑川雅之",
+  "darwin_compatible": true,
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger(含 1 条同书兄弟 skill 混淆诱饵) + 1 条 edge_case。should_not_trigger 容错为 0。",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "这个展厅让人感觉好冷、没有氛围,我说不清哪里不对。",
+      "expected_behavior": "激活 气: 判断/营造一体感与氛围",
+      "notes": "正面: 缺氛围"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "团队最近不在一个频道,没有一体感,不是再加规则能解决的。",
+      "expected_behavior": "激活 气: 恢复在场感/默契而非加规则",
+      "notes": "正面: 缺一体感"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我想用一根柱子或一个标识给人安心感、提供心理锚点。",
+      "expected_behavior": "激活 气: 最小象征物提供心理依靠(一根柱子也是建筑)",
+      "notes": "正面: 锚点"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "怎么调动孩子的内在动力,我不想靠命令施压。",
+      "expected_behavior": "激活 气: 用气场/在场感调动而非施压",
+      "notes": "正面: 不靠施压"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这段演讲哪里该停顿、节奏不对,我想安排留白和余韵。",
+      "expected_behavior": "不应激活 气,应激活 japan-ma-interval(间:停顿/节奏/留白)",
+      "notes": "跨 skill 混淆诱饵: 应触发 间 而非 气"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我算一下这个梁的承重参数和截面尺寸。",
+      "expected_behavior": "不应激活 气(纯工程量化问题)",
+      "notes": "诱饵: 纯工程参数"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "日本人那种'气场''能量'到底科学吗?我想用气解释一切团队问题。",
+      "expected_behavior": "不无脑触发 气 做万能解释;若触发须施加 ce35 边界(气≠可测物理量/万能解释)",
+      "notes": "边界: 气被当万能解释(ce35)"
+    }
+  ]
+}

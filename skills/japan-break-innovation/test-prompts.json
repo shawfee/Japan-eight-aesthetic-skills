@@ -1,0 +1,59 @@
+{
+  "skill": "japan-break-innovation",
+  "version": "0.1.0",
+  "source_book": "日本的八个审美意识 — 黑川雅之",
+  "darwin_compatible": true,
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger(含 1 条同书兄弟 skill 混淆诱饵) + 1 条 edge_case。should_not_trigger 容错为 0。",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "流程太僵了,想打破一下常规。",
+      "expected_behavior": "激活 破: 打破常规(须先确认已'守')",
+      "notes": "正面: 打破常规"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "已经学到头了,怎么创新、加入自己的独特思考?",
+      "expected_behavior": "激活 破: 守破离之'破'",
+      "notes": "正面: 学无可学"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "方案全过程计划零意外,最好一版是初稿,想打开偶然与断裂。",
+      "expected_behavior": "激活 破: 打开偶然(ce28)",
+      "notes": "正面: 交托偶然"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "要挑战一个成熟规范/权威叙事,想打破但须评估风险与后果。",
+      "expected_behavior": "激活 破: 打破权威叙事并评估风险(千利休代价 ce31)",
+      "notes": "正面: 挑战权威"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "几个对等方案能不能都留着共存,不二选一?",
+      "expected_behavior": "不应激活 破,应激活 japan-parallel-consciousness(并:并列共存)",
+      "notes": "跨 skill 混淆诱饵: 应触发 并 而非 破"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我要做个手术方案,不能冒险打破既有流程。",
+      "expected_behavior": "不应激活 破(安全/不可逆领域)",
+      "notes": "诱饵: 安全领域"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我是新手刚学两天,想直接颠覆行业惯例搞个大创新。",
+      "expected_behavior": "不触发 破 或触发但施加 ce30 判停(先守后破:未掌握规范不破,跳回'守')",
+      "notes": "边界: 先守后破(ce30)"
+    }
+  ]
+}

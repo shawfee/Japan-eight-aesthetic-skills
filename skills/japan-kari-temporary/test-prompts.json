@@ -1,0 +1,59 @@
+{
+  "skill": "japan-kari-temporary",
+  "version": "0.1.0",
+  "source_book": "日本的八个审美意识 — 黑川雅之",
+  "darwin_compatible": true,
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger(含 1 条同书兄弟 skill 混淆诱饵) + 1 条 edge_case。should_not_trigger 容错为 0。",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "先做个临时版 MVP,不必完美、不能发我总纠结。",
+      "expected_behavior": "激活 假: 低依恋暂定原型",
+      "notes": "正面: 暂定原型"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "设计灵活空间,希望同一载体承担多用途、边界可流动。",
+      "expected_behavior": "激活 假: 融通无碍的临时空间",
+      "notes": "正面: 灵活空间"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "把这项方案明确为临时、可弃、借来,需要语言框架向他人说明这不是最终承诺。",
+      "expected_behavior": "激活 假: 借来/暂定可弃的语言框架",
+      "notes": "正面: 暂定承诺"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "越想控制越做不出来,想顺其自然、把结果交给偶然。",
+      "expected_behavior": "激活 假: 顺势而为、低依恋",
+      "notes": "正面: 顺其自然"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "茶碗破损了,我想修回它本来的本色,回到未加工。",
+      "expected_behavior": "不应激活 假,应激活 japan-plain-consciousness(素:本真/风化)",
+      "notes": "跨 skill 混淆诱饵: 应触发 素 而非 假"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这份合同我已经签了,但先暂定一下以后再说。",
+      "expected_behavior": "不应激活 假(契约需确定承诺,假≠放弃承诺 ce27)",
+      "notes": "诱饵: 契约/不可逆"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这个项目我就先随便搞搞、暂定就好,反正不用认真维护。",
+      "expected_behavior": "不无脑触发 假;若为借口则施加 ce27 边界(假≠放弃维护),或判定不触发",
+      "notes": "边界: 假被当放弃维护借口(ce27)"
+    }
+  ]
+}

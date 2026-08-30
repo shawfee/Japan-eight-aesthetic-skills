@@ -1,0 +1,334 @@
+{
+  "japan-micro-consciousness::should-trigger-01": {
+    "accept": [
+      "japan-micro-consciousness"
+    ]
+  },
+  "japan-micro-consciousness::should-trigger-02": {
+    "accept": [
+      "japan-micro-consciousness"
+    ]
+  },
+  "japan-micro-consciousness::should-trigger-03": {
+    "accept": [
+      "japan-micro-consciousness"
+    ]
+  },
+  "japan-micro-consciousness::should-trigger-04": {
+    "accept": [
+      "japan-micro-consciousness"
+    ]
+  },
+  "japan-micro-consciousness::should-not-trigger-01": {
+    "accept": [
+      "japan-parallel-consciousness"
+    ]
+  },
+  "japan-micro-consciousness::should-not-trigger-02": {
+    "accept": [
+      "NONE"
+    ]
+  },
+  "japan-micro-consciousness::edge-01": {
+    "accept": [
+      "japan-micro-consciousness"
+    ]
+  },
+  "japan-parallel-consciousness::should-trigger-01": {
+    "accept": [
+      "japan-parallel-consciousness"
+    ]
+  },
+  "japan-parallel-consciousness::should-trigger-02": {
+    "accept": [
+      "japan-parallel-consciousness"
+    ]
+  },
+  "japan-parallel-consciousness::should-trigger-03": {
+    "accept": [
+      "japan-parallel-consciousness"
+    ]
+  },
+  "japan-parallel-consciousness::should-trigger-04": {
+    "accept": [
+      "japan-parallel-consciousness"
+    ]
+  },
+  "japan-parallel-consciousness::should-not-trigger-01": {
+    "accept": [
+      "japan-micro-consciousness"
+    ]
+  },
+  "japan-parallel-consciousness::should-not-trigger-02": {
+    "accept": [
+      "NONE"
+    ]
+  },
+  "japan-parallel-consciousness::edge-01": {
+    "accept": [
+      "japan-parallel-consciousness"
+    ]
+  },
+  "japan-ki-consciousness::should-trigger-01": {
+    "accept": [
+      "japan-ki-consciousness"
+    ]
+  },
+  "japan-ki-consciousness::should-trigger-02": {
+    "accept": [
+      "japan-ki-consciousness"
+    ]
+  },
+  "japan-ki-consciousness::should-trigger-03": {
+    "accept": [
+      "japan-ki-consciousness"
+    ]
+  },
+  "japan-ki-consciousness::should-trigger-04": {
+    "accept": [
+      "japan-ki-consciousness"
+    ]
+  },
+  "japan-ki-consciousness::should-not-trigger-01": {
+    "accept": [
+      "japan-ma-interval"
+    ]
+  },
+  "japan-ki-consciousness::should-not-trigger-02": {
+    "accept": [
+      "NONE"
+    ]
+  },
+  "japan-ki-consciousness::edge-01": {
+    "accept": [
+      "japan-ki-consciousness"
+    ]
+  },
+  "japan-ma-interval::should-trigger-01": {
+    "accept": [
+      "japan-ma-interval"
+    ]
+  },
+  "japan-ma-interval::should-trigger-02": {
+    "accept": [
+      "japan-ma-interval"
+    ]
+  },
+  "japan-ma-interval::should-trigger-03": {
+    "accept": [
+      "japan-ma-interval"
+    ]
+  },
+  "japan-ma-interval::should-trigger-04": {
+    "accept": [
+      "japan-ma-interval"
+    ]
+  },
+  "japan-ma-interval::should-not-trigger-01": {
+    "accept": [
+      "japan-secret-consciousness"
+    ]
+  },
+  "japan-ma-interval::should-not-trigger-02": {
+    "accept": [
+      "NONE"
+    ]
+  },
+  "japan-ma-interval::edge-01": {
+    "accept": [
+      "japan-ma-interval"
+    ]
+  },
+  "japan-secret-consciousness::should-trigger-01": {
+    "accept": [
+      "japan-secret-consciousness"
+    ]
+  },
+  "japan-secret-consciousness::should-trigger-02": {
+    "accept": [
+      "japan-secret-consciousness"
+    ]
+  },
+  "japan-secret-consciousness::should-trigger-03": {
+    "accept": [
+      "japan-secret-consciousness"
+    ]
+  },
+  "japan-secret-consciousness::should-trigger-04": {
+    "accept": [
+      "japan-secret-consciousness"
+    ]
+  },
+  "japan-secret-consciousness::should-not-trigger-01": {
+    "accept": [
+      "japan-ma-interval"
+    ]
+  },
+  "japan-secret-consciousness::should-not-trigger-02": {
+    "accept": [
+      "NONE"
+    ]
+  },
+  "japan-secret-consciousness::edge-01": {
+    "accept": [
+      "japan-secret-consciousness"
+    ]
+  },
+  "japan-plain-consciousness::should-trigger-01": {
+    "accept": [
+      "japan-plain-consciousness"
+    ]
+  },
+  "japan-plain-consciousness::should-trigger-02": {
+    "accept": [
+      "japan-plain-consciousness"
+    ]
+  },
+  "japan-plain-consciousness::should-trigger-03": {
+    "accept": [
+      "japan-plain-consciousness"
+    ]
+  },
+  "japan-plain-consciousness::should-trigger-04": {
+    "accept": [
+      "japan-plain-consciousness"
+    ]
+  },
+  "japan-plain-consciousness::should-not-trigger-01": {
+    "accept": [
+      "japan-kari-temporary"
+    ]
+  },
+  "japan-plain-consciousness::should-not-trigger-02": {
+    "accept": [
+      "NONE"
+    ]
+  },
+  "japan-plain-consciousness::edge-01": {
+    "accept": [
+      "japan-plain-consciousness"
+    ]
+  },
+  "japan-kari-temporary::should-trigger-01": {
+    "accept": [
+      "japan-kari-temporary"
+    ]
+  },
+  "japan-kari-temporary::should-trigger-02": {
+    "accept": [
+      "japan-kari-temporary"
+    ]
+  },
+  "japan-kari-temporary::should-trigger-03": {
+    "accept": [
+      "japan-kari-temporary"
+    ]
+  },
+  "japan-kari-temporary::should-trigger-04": {
+    "accept": [
+      "japan-kari-temporary"
+    ]
+  },
+  "japan-kari-temporary::should-not-trigger-01": {
+    "accept": [
+      "japan-plain-consciousness"
+    ]
+  },
+  "japan-kari-temporary::should-not-trigger-02": {
+    "accept": [
+      "NONE"
+    ]
+  },
+  "japan-kari-temporary::edge-01": {
+    "accept": [
+      "japan-kari-temporary",
+      "NONE"
+    ]
+  },
+  "japan-break-innovation::should-trigger-01": {
+    "accept": [
+      "japan-break-innovation"
+    ]
+  },
+  "japan-break-innovation::should-trigger-02": {
+    "accept": [
+      "japan-break-innovation"
+    ]
+  },
+  "japan-break-innovation::should-trigger-03": {
+    "accept": [
+      "japan-break-innovation"
+    ]
+  },
+  "japan-break-innovation::should-trigger-04": {
+    "accept": [
+      "japan-break-innovation"
+    ]
+  },
+  "japan-break-innovation::should-not-trigger-01": {
+    "accept": [
+      "japan-parallel-consciousness"
+    ]
+  },
+  "japan-break-innovation::should-not-trigger-02": {
+    "accept": [
+      "NONE"
+    ]
+  },
+  "japan-break-innovation::edge-01": {
+    "accept": [
+      "japan-break-innovation",
+      "NONE"
+    ]
+  },
+  "adversarial::adv-01": {
+    "accept": [
+      "japan-ma-interval"
+    ]
+  },
+  "adversarial::adv-02": {
+    "accept": [
+      "japan-secret-consciousness"
+    ]
+  },
+  "adversarial::adv-03": {
+    "accept": [
+      "japan-ki-consciousness"
+    ]
+  },
+  "adversarial::adv-04": {
+    "accept": [
+      "japan-micro-consciousness"
+    ]
+  },
+  "adversarial::adv-05": {
+    "accept": [
+      "japan-plain-consciousness"
+    ]
+  },
+  "adversarial::adv-06": {
+    "accept": [
+      "japan-kari-temporary"
+    ]
+  },
+  "adversarial::adv-07": {
+    "accept": [
+      "japan-break-innovation"
+    ]
+  },
+  "adversarial::adv-08": {
+    "accept": [
+      "japan-parallel-consciousness"
+    ]
+  },
+  "adversarial::adv-09": {
+    "accept": [
+      "japan-secret-consciousness"
+    ]
+  },
+  "adversarial::adv-10": {
+    "accept": [
+      "japan-ma-interval"
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "skill": "japan-parallel-consciousness",
+  "version": "0.1.0",
+  "source_book": "日本的八个审美意识 — 黑川雅之",
+  "darwin_compatible": true,
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger(含 1 条同书兄弟 skill 混淆诱饵) + 1 条 edge_case。should_not_trigger 容错为 0。",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我们开源社区没有 leader,该怎么自组织才不乱?",
+      "expected_behavior": "激活 并: 用并列无中心+公共规则兜底维持秩序",
+      "notes": "正面: 无 leader 自治社群"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这两个方案必须二选一吗?能不能都留着各司其职?",
+      "expected_behavior": "激活 并: 并列共存而非二选一",
+      "notes": "正面: 不二选一"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "版面非要有一个主视觉焦点吗?我觉得多个模块摆一起不像整体。",
+      "expected_behavior": "激活 并: 去中心构图/无主从聚合",
+      "notes": "正面: 无中心布局"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "多元文化团队,多种价值观怎么并存而不靠统一标准维持秩序?",
+      "expected_behavior": "激活 并: 相对价值观并列共存",
+      "notes": "正面: 多元共存治理"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我想先画个全景体系图,但每次都落不了地。",
+      "expected_behavior": "不应激活 并,应激活 japan-micro-consciousness(微:从最小个体入手)",
+      "notes": "跨 skill 混淆诱饵: 应触发 微 而非 并"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "系统出了事故,写事故复盘报告,必须给出唯一责任人和一致事实。",
+      "expected_behavior": "不应激活 并(事实一致性/责任人场景,并列会放大失真)",
+      "notes": "诱饵: 事故复盘需收敛唯一结论"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我们扁平化了反而更乱,大家都说都可以,结果没人负责。",
+      "expected_behavior": "触发 并 的 B 段做失效定位(并列退化成'都可以'式无主张 ce26),正是 并 的负向适用场景",
+      "notes": "边界: 负面场景仍是 并 的管辖范围,用边界诊断"
+    }
+  ]
+}

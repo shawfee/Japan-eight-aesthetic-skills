@@ -1,0 +1,59 @@
+{
+  "skill": "japan-plain-consciousness",
+  "version": "0.1.0",
+  "source_book": "日本的八个审美意识 — 黑川雅之",
+  "darwin_compatible": true,
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger(含 1 条同书兄弟 skill 混淆诱饵) + 1 条 edge_case。should_not_trigger 容错为 0。",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "界面太花哨了,怎么减到最本质?",
+      "expected_behavior": "激活 素: 做减法回到本真",
+      "notes": "正面: 减到本质"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "素材优先还是造型优先?要不要加这个特效?",
+      "expected_behavior": "激活 素: 让素材而非造型说话",
+      "notes": "正面: 素材优先"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "用一张纸草图快速验证点子,却被'自由度越高越好'卡住。",
+      "expected_behavior": "激活 素: 用形式限制激发创意",
+      "notes": "正面: 最小原型"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "纠结东西要不要永远如新,还是接受使用痕迹与风化路径。",
+      "expected_behavior": "激活 素: 接受风化出的本色(ce7:本色可变非不变)",
+      "notes": "正面: 风化"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "先做个临时版原型,不必永久,暂定就好。",
+      "expected_behavior": "不应激活 素,应激活 japan-kari-temporary(假:暂定可弃/借来)",
+      "notes": "跨 skill 混淆诱饵: 应触发 假 而非 素"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "给视障用户做无障碍界面,功能不能被牺牲。",
+      "expected_behavior": "不应激活 素(公共/无障碍场景素失效,见 ce46/超老龄化边界)",
+      "notes": "诱饵: 无障碍/包容性"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我想做极简设计,越少越好。",
+      "expected_behavior": "触发 素 但施加 ce5 边界(极简是结果不是目的;先问本真而非为简而简)",
+      "notes": "边界: 极简误读(ce5)"
+    }
+  ]
+}
