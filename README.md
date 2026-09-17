@@ -1,6 +1,6 @@
 # 日本的八个审美意识 — Claude Skill 包
 
-把黑川雅之《日本的八个审美意识》(1979) 蒸馏为 **8 个可复用 AI skill**，用 [cangjie 拆书方法论](https://github.com/anthropics)（Adler 三阶段理解 + RIA++ + 三重验证 + 批判阶段）从扫描 PDF 全程自动化产出。
+把黑川雅之《日本的八个审美意识》(1979) 蒸馏为 **8 个可复用 AI skill**，用 cangjie 拆书方法论（Adler 三阶段理解 + RIA++ + 三重验证 + 批判阶段）从扫描 PDF 全程自动化产出。本仓库即该方法论的完整产物与可复现脚手架，见 [GitHub 仓库](https://github.com/shawfee/Japan-eight-aesthetic-skills)。
 
 > 这 8 个意识不是装饰美学，而是一组**可执行的判断/设计原则**：微、并、气、间、秘、素、假、破。每个 skill 都带"何时激活 / 何时判停 / 与兄弟意识如何区分 / 作者盲点边界"。
 
