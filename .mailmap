@@ -1,0 +1,12 @@
+# .mailmap - 统一历史提交的身份显示
+#
+# 作用：仅影响 git log / git shortlog / git blame 及托管平台贡献者列表的
+#       显示结果，不改写任何提交内容与 SHA，历史完全保持原样。
+# 撤销：删除本文件即可，无任何副作用，也不需要强推。
+# 规范身份：shawfee <zhangxf568@foxmail.com>
+
+# 旧邮箱变体 -> 规范身份
+shawfee <zhangxf568@foxmail.com> <shawfee@126.com>
+
+# GitHub noreply 邮箱变体 -> 规范身份
+shawfee <zhangxf568@foxmail.com> <54354452+shawfee@users.noreply.github.com>
